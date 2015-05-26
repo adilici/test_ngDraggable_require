@@ -1,0 +1,1 @@
+# test_ngDraggable_require
