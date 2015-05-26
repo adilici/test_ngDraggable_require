@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>ngDraggable</title>
+    </head>
+    
+    <body ng-app="ExampleApp">
+        <div ng-view></div>
+        
+        <script src="../requirejs/require.js" type="text/javascript"></script>
+        <script src="../require.config.js" type="text/javascript"></script>
+        <script>
+            require( [
+                'angular',
+                'app'
+            ], function(angular, app) {
+                angular.element().ready(function() {
+                    angular.resumeBootstrap([app['name']]);
+                });
+            });
+                        
+                                    
+        </script>
+    </body>
+
+</html>
